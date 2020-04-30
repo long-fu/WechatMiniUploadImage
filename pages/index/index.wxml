@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="image_view">
+  <block wx:if="{{img_src != ''}}">
+  <image src="{{img_src}}"></image>
+  </block>
+
+    <block wx:if="{{video_src != ''}}">
+  <video src="{{video_src}}"></video>
+  </block>
+  
+  </view>
+
+ <button class="select_image" bindtap="select_image">选择照片</button>
+ <button class="select_video" bindtap="select_video">选择视频</button>
+ <button class="upload_data" bindtap="upload_data">开始上传</button>
+</view>
